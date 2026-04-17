@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37111.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LifEx.Infrastructure", "LifEx.Infrastructure\LifEx.Infrastructure.csproj", "{196EFEE1-261E-4309-97DA-9EE20DC00350}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lifex.API", "Lifex.API\Lifex.API\Lifex.API.csproj", "{AC8F63D7-D8E9-B64C-2290-A81942F31BCC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{196EFEE1-261E-4309-97DA-9EE20DC00350}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{196EFEE1-261E-4309-97DA-9EE20DC00350}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{196EFEE1-261E-4309-97DA-9EE20DC00350}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{196EFEE1-261E-4309-97DA-9EE20DC00350}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC8F63D7-D8E9-B64C-2290-A81942F31BCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC8F63D7-D8E9-B64C-2290-A81942F31BCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC8F63D7-D8E9-B64C-2290-A81942F31BCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC8F63D7-D8E9-B64C-2290-A81942F31BCC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3852E74D-8B95-450D-A8BA-3A43294C4D2D}
+	EndGlobalSection
+EndGlobal
