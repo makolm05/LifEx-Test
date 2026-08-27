@@ -1,0 +1,11 @@
+﻿@using LifEx.Infrastructure.Data.DTOs
+@model IEnumerable<PathDTO>
+
+<div class="sidebar-inner">
+@foreach (var p in Model)
+    {
+        <a class="sidebar-item" href="/Path/Index?id=@p.ID" title="@p.Name" data-name="@p.Name">
+            <span class="sidebar-icon">@p.Name</span>
+        </a>
+    }
+</div>

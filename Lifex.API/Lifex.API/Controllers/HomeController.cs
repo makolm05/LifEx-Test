@@ -1,17 +1,23 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using LifEx.Infrastructure.Services;
 
 namespace LifEx.API.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Welcome()
+        private readonly ILifExRepository _repository;
+
+        public HomeController(ILifExRepository repository)
         {
-            return View();
+            _repository = repository;
         }
 
-        public IActionResult Technology(int id)
+        // GET: /Home/Welcome
+        public async Task<IActionResult> Welcome()
         {
-            return View();
+            var paths = await _repository.GetPathsAsync();
+
+            return View(paths);
         }
     }
 }

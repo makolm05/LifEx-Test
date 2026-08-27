@@ -7,3 +7,6 @@
 /Lifex.API/Lifex.API/obj
 /LifEx.Infrastructure/obj
 /Lifex.API/Lifex.API/LifEx.API.csproj.user
+/LifEx.Web/node_modules
+/LifEx.Infrastructure/bin/
+/Lifex.API/Lifex.API/bin/

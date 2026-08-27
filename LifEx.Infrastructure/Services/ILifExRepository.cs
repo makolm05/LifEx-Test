@@ -4,9 +4,9 @@ namespace LifEx.Infrastructure.Services
 {
     public interface ILifExRepository
     {
-        Task<IEnumerable<PathDTO>> GetPathsAsync();
-        Task<IEnumerable<AreaDTO>> GetAreasAsync();
-        Task<IEnumerable<ModuleDTO>> GetModulesAsync();
-        Task<IEnumerable<SkillDTO>> GetSkillsAsync();
+        Task<List<PathDTO>> GetPathsAsync();
+        Task<List<AreaDTO>> GetAreasAsync();
+        Task<List<ModuleDTO>> GetModulesAsync();
+        Task<List<SkillDTO>> GetSkillsAsync();
     }
 }

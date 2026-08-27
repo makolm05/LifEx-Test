@@ -1,13 +1,20 @@
-﻿using LifEx.Infrastructure.Services;
-using LifEx.Infrastructure.DbContexts;
+﻿using LifEx.Infrastructure.DbContexts;
+using LifEx.Infrastructure.Services;
+using Microsoft.EntityFrameworkCore;
 
 namespace LifEx.API.Helpers
 {
-    public class Startup
+    public static class Startup
     {
 
-        public static void ConfigureServices(IServiceCollection services)
+        public static void ConfigureServices(IConfiguration configuration, IServiceCollection services)
         {
+            services.AddDbContext<LifExDbContext>(options =>
+            {
+                options.UseSqlServer(
+                    configuration.GetConnectionString("DefaultConnection"));
+            });
+
             services.AddControllersWithViews();
             services.AddScoped<LifExDbContext>();
             services.AddScoped<ILifExRepository, LifExRepository>();
@@ -24,7 +31,7 @@ namespace LifEx.API.Helpers
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}");
+                pattern: "{controller=Home}/{action=Welcome}");
         }
     }
 }
