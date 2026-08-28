@@ -1,0 +1,46 @@
+﻿* {
+    outline: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* ---------------------Standart---------------------- */
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    background-color: dimgrey;
+}
+
+body > * {
+    width: 100%;
+}
+
+.just_around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.just_between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex_around {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex_between {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}

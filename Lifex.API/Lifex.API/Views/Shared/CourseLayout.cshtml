@@ -1,0 +1,24 @@
+@using LifEx.Infrastructure.Data.DTOs
+
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model IEnumerable<PathDTO>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/always.css" />
+    <link rel="stylesheet" href="~/css/sidebar.css" />
+    <script src="~/js/sidebar.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <aside class="left-sidebar" id="pathSidebar" aria-label="Path toolbar">
+            <partial name="CourseSidebar.cshtml" model="Model" />
+    </aside>
+    <main>
+        @RenderBody()
+    </main>
+</body>
+</html>

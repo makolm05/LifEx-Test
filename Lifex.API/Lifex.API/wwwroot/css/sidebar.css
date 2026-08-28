@@ -1,0 +1,68 @@
+/* Боковая панель 15% ширины */
+.left-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 15%;
+    min-width: 72px;
+    max-width: 140px;
+    background: #808080;
+    border-right: 4px solid #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.sidebar-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 6px;
+    width: 100%;
+}
+
+.sidebar-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 58px;
+    height: 58px;
+    background: #f2f2f2;
+    border-radius: 6px;
+    box-shadow: inset 0 0 0 3px rgba(0,0,0,0.6);
+    text-decoration: none;
+    color: #111;
+    transition: transform .15s ease, filter .15s ease;
+    filter: grayscale(1) contrast(0.9);
+}
+
+    .sidebar-item:hover {
+        transform: translateX(6px);
+        filter: none;
+    }
+
+.sidebar-icon {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1;
+}
+
+/* Основной контент с учётом панели */
+.main-content {
+    margin-left: 15%;
+    padding: 24px;
+}
+
+/* Адаптив: при узком экране делаем панель шире в пикселях */
+@media (max-width: 700px) {
+    .left-sidebar {
+        width: 72px;
+    }
+
+    .main-content {
+        margin-left: 72px;
+    }
+}
